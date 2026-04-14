@@ -1,0 +1,28 @@
+{
+  "recentFiles": [
+    {
+      "basename": "log",
+      "path": "01_WIKI/log.md"
+    },
+    {
+      "basename": "index",
+      "path": "01_WIKI/index.md"
+    },
+    {
+      "basename": "stanley",
+      "path": "stanley.md"
+    },
+    {
+      "basename": "Welcome to Stanley",
+      "path": "Welcome to Stanley.md"
+    },
+    {
+      "basename": "SKILL",
+      "path": "skills/SKILL.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}

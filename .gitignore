@@ -1,0 +1,30 @@
+# OS Files
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Obsidian Internal
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/backups/
+.obsidian/cache/
+.obsidian/indexed/
+
+# Plugin Dev Artifacts
+**/node_modules/
+**/.git/
+**/dist/
+**/.editorconfig
+**/.eslint*
+**/.prettier*
+**/package-lock.json
+
+# Sensitive Files
+.env
+.env.*
+secrets.*
+credentials.*
+
+# Local specific notes
+me.local.md

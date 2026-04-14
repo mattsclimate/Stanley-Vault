@@ -1,0 +1,11 @@
+{
+  "port": 27124,
+  "insecurePort": 27123,
+  "enableInsecureServer": false,
+  "apiKey": "REDACTED_API_KEY",
+  "crypto": {
+    "cert": "-----BEGIN CERTIFICATE-----\r\nREDACTED\r\n-----END CERTIFICATE-----\r\n",
+    "privateKey": "-----BEGIN RSA PRIVATE KEY-----\r\nREDACTED\r\n-----END RSA PRIVATE KEY-----\r\n",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\r\nREDACTED\r\n-----END PUBLIC KEY-----\r\n"
+  }
+}
