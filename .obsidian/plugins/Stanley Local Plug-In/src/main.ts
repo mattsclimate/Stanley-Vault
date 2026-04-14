@@ -7,6 +7,9 @@ import { EmbeddingService } from './services/EmbeddingService';
 import { PerformanceMonitor } from './services/PerformanceMonitor';
 import { IndexManager } from './services/IndexManager';
 import { RAGEngine } from './services/RAGEngine';
+import { CLIService } from './services/CLIService';
+import { SkillService } from './services/SkillService';
+import { VaultService } from './services/VaultService';
 import { ChatView, VIEW_TYPE_CHAT } from './views/ChatView';
 
 export default class StanleyPlugin extends Plugin {
@@ -18,6 +21,9 @@ export default class StanleyPlugin extends Plugin {
   private monitor!: PerformanceMonitor;
   private indexManager!: IndexManager;
   private ragEngine!: RAGEngine;
+  private cliService!: CLIService;
+  private skillService!: SkillService;
+  private vaultService!: VaultService;
 
   async onload(): Promise<void> {
     await this.loadSettings();
@@ -38,9 +44,12 @@ export default class StanleyPlugin extends Plugin {
       this
     );
     this.ragEngine = new RAGEngine(this.ollamaClient, this.store, this.monitor);
+    this.cliService = new CLIService(this.app);
+    this.skillService = new SkillService(this.app);
+    this.vaultService = new VaultService(this.app);
 
     this.registerView(VIEW_TYPE_CHAT, (leaf) =>
-      new ChatView(leaf, this, this.ragEngine, this.indexManager, this.monitor)
+      new ChatView(leaf, this, this.ragEngine, this.indexManager, this.monitor, this.cliService, this.skillService, this.vaultService)
     );
 
     this.addRibbonIcon('message-circle', 'Open Stanley Chat', () => {

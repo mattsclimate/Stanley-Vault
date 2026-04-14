@@ -11,6 +11,8 @@ export interface StanleySettings {
   maxContextTokens: number;
   autoTuneEnabled: boolean;
   fileModTimes: Record<string, number>;
+  extendedThinking: boolean;
+  showStats: boolean;
 }
 
 export const DEFAULT_STANLEY_SETTINGS: StanleySettings = {
@@ -23,6 +25,8 @@ export const DEFAULT_STANLEY_SETTINGS: StanleySettings = {
   maxContextTokens: 4096,
   autoTuneEnabled: true,
   fileModTimes: {},
+  extendedThinking: false,
+  showStats: false,
 };
 
 export class StanleySettingTab extends PluginSettingTab {

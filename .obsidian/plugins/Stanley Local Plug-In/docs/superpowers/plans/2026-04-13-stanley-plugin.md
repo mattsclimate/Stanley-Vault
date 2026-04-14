@@ -271,7 +271,7 @@ export function addIcon(_id: string, _svg: string): void {}
 - [ ] **Step 5: Verify test infrastructure runs**
 
 ```bash
-cd /Users/mattgreves/Desktop/Stanley/.obsidian/plugins/Stanley\ Local\ Plug-In && npm test 2>&1 | head -20
+cd [PLUGIN_ROOT] && npm test 2>&1 | head -20
 ```
 
 Expected: Vitest runs and reports "No test files found" (no tests yet, but no config errors).
@@ -2442,7 +2442,7 @@ git commit -m "feat: add Stanley chat panel styles using Obsidian CSS variables"
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
   "description": "Privacy-first RAG engine for your Obsidian vault. Chat with your notes using local Ollama models.",
-  "author": "Antigravity",
+  "author": "mattsclimate",
   "authorUrl": "",
   "isDesktopOnly": true
 }

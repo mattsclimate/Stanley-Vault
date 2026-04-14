@@ -72,4 +72,4 @@ graph TD
 ## 🏛️ Origins
 Stanley was built for those who seek maximum leverage from their personal knowledge. It is designed to be the definitive base for anyone building a private, compounding intelligence system.
 
-**Built by [USER_NAME]. Powered by Stanley.**
+**Built by [username]]. Powered by Stanley.**

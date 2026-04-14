@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Birds",
+      "path": "00_RAW/Birds.md"
+    },
+    {
+      "basename": "Welcome to Stanley",
+      "path": "Welcome to Stanley.md"
+    },
+    {
       "basename": "log",
       "path": "01_WIKI/log.md"
     },
@@ -11,10 +19,6 @@
     {
       "basename": "stanley",
       "path": "stanley.md"
-    },
-    {
-      "basename": "Welcome to Stanley",
-      "path": "Welcome to Stanley.md"
     },
     {
       "basename": "SKILL",
